@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  width: 4rem;
+}
+
+span {
+  font-weight: 900;
+}
+
+main {
+  width: 35rem;
+}
+main h1 {
+  font-weight: 100;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+main p {
+  margin-bottom: 1.5rem;
+}
+main form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 3rem;
+}
+main input[type=email] {
+  width: 95%;
+  height: 2.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid #ccc;
+}
+main input[type=button] {
+  width: 95%;
+  height: 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: hsl(223deg, 87%, 63%);
+  color: white;
+}
+main input[type=button]:hover {
+  background-color: hsl(223deg, 100%, 88%);
+  cursor: pointer;
+}
+
+footer p:first-child {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#error1,
+#error2 {
+  color: hsl(354deg, 100%, 66%);
+  font-size: 0.8rem;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 17rem;
+  }
+  main h1 {
+    font-size: 1.7rem;
+  }
+  main form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main input[type=email] {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  main input[type=button] {
+    width: 100%;
+    order: 3;
+  }
+  #error1,
+  #error2 {
+    text-align: center;
+    padding-left: 0;
+  }
+}
