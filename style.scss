@@ -99,6 +99,25 @@ footer {
   padding-left: 1.5rem;
 }
 
+footer {
+  & a i {
+    border: 1px solid #ccc;
+    margin: 0 0.5rem;
+    color: hsl(228, 45%, 44%);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-top: 0.65rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+
+    &:hover {
+      color: white;
+      background-color: hsl(228, 45%, 44%);
+    }
+  }
+}
+
 @media (max-width: 600px) {
   main {
     width: 17rem;
