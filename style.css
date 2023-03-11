@@ -107,6 +107,9 @@ footer a i:hover {
   color: white;
   background-color: hsl(228, 45%, 44%);
 }
+footer p {
+  font-size: 0.8rem;
+}
 
 @media (max-width: 600px) {
   main {
