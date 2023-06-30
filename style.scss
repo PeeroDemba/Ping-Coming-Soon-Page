@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  width: 4rem;
+}
+
+span {
+  font-weight: 900;
+}
+
+main {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+
+  & h1 {
+    font-weight: 100;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+
+  & p {
+    margin-bottom: 1.5rem;
+  }
+
+  & form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+
+  & input[type="email"] {
+    width: 95%;
+    height: 2.5rem;
+    padding: 1.25rem 1.25rem 1.25rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid #ccc;
+    height: 3rem;
+  }
+
+  & input[type="button"] {
+    width: 95%;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    height: 3rem;
+
+    &:hover {
+      background-color: hsl(223, 100%, 88%);
+      cursor: pointer;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#error1,
+#error2 {
+  color: hsl(354, 100%, 66%);
+  font-size: 0.8rem;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+footer {
+  & p:first-child {
+    font-size: 0.8rem;
+    color: #aaa;
+  }
+
+  & a i {
+    border: 1px solid #ccc;
+    margin: 0 0.5rem;
+    color: hsl(228, 45%, 44%);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    &:hover {
+      color: white;
+      background-color: hsl(228, 45%, 44%);
+    }
+  }
+
+  & p {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 20rem;
+
+    & h1 {
+      font-size: 1.7rem;
+    }
+
+    & form {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    & input[type="email"] {
+      width: 100%;
+      padding: 1rem 1rem 1rem 2.5rem;
+    }
+
+    & input[type="button"] {
+      width: 100%;
+      order: 3;
+      margin-top: 0.5rem;
+    }
+  }
+
+  #error1,
+  #error2 {
+    text-align: center;
+    padding-left: 0;
+  }
+}
